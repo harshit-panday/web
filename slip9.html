@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Membership Form</title>
+</head>
+<body>
+    <form action="slip9_1.html" onsubmit="return validateForm()">
+        Username: <input type="text" name="username" id="1"><br><br>
+        Password: <input type="password" name="password" id="2"><br><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("1").value;
+            var password = document.getElementById("2").value;
+
+            // Validate username (length should be at least 5 characters)
+            if (username.length < 5) {
+                alert("Username must be at least 5 characters long");
+                return false;
+            }
+
+            // Validate password (length should be at least 8 characters)
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long");
+                return false;
+            }
+
+            if(username==password){
+                alert("login successfull");
+                return true;
+            }else{
+                alert("wrong password")
+                return false;
+            }
+            // Both username and password are valid
+        }
+    </script>
+</body>
+</html>

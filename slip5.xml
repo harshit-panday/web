@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemmdetail>
+    <item id="1">
+        <itemname>mouse</itemname>
+        <itemprice>150</itemprice>
+        <quantity>15</quantity>
+    </item>
+    <item id="2">
+        <itemname>cpu</itemname>
+        <itemprice>50</itemprice>
+        <quantity>5</quantity>
+    </item>
+    <item id="3">
+        <itemname>keyboard</itemname>
+        <itemprice>1</itemprice>
+        <quantity>1</quantity>
+    </item>
+    <item id="4">
+        <itemname>speaket</itemname>
+        <itemprice>100</itemprice>
+        <quantity>10</quantity>
+    </item>
+    <item id="5">
+        <itemname>monitor</itemname>
+        <itemprice>12</itemprice>
+        <quantity>10</quantity>
+    </item>
+</itemmdetail>

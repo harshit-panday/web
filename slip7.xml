@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movieinfo>
+    <book>
+        <movieno>1</movieno>
+        <movietitle>kabhi kabhi</movietitle>
+        <actorname>amitabh bachchan</actorname>
+        <releaseyear>1976</releaseyear>
+    </book>
+    <book>
+        <movieno>2</movieno>
+        <movietitle>khiladi 420</movietitle>
+        <actorname>akshay kumar</actorname>
+        <releaseyear>2005</releaseyear>
+    </book>
+</movieinfo>
+    

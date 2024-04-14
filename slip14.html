@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        var xmlhttp;
+        function sendEmpID(str) {
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+            } else if (window.ActiveXObject) {
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            if (xmlhttp == null) {
+                alert("Browser does not support");
+                return;
+            }
+            var url = "slip14.php";
+            url = url + "?q=" + str;
+            xmlhttp.onreadystatechange = stateChanged;
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send(null);
+        }
+        function stateChanged() {
+            if (xmlhttp.readyState == 4) {
+                document.getElementById("teacher").innerHTML = xmlhttp.responseText;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Employee list:
+        <select name="name" onChange="sendEmpID(this.value)">
+            <option value="1">harshit</option>
+            <option value="2">Mr.Deshpande</option>
+            <option value="3">Mr.Kakde</option>
+        </select>
+    </form>
+    <div id="teacher">Employee info</div>
+</body>
+</html>
